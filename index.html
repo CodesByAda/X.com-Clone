@@ -6,12 +6,277 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
 </head>
 
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+<body class="bg-black text-white overflow-hidden flex justify-center">
+    <div class="container flex justify-center">
+        <div class="left-side w-72 font-Inter text-[20px] h-[100vh] overflow-hidden">
+            <div class="navigation p-4 flex flex-col justify-between h-[100%]">
+                <div class="navsec1">
+                    <div class="logo mb-2 pl-2">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"
+                            class="h-[30px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"
+                            fill="currentColor">
+                            <g>
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+                    <ul class="list-none inline-block">
+                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
+                                class="fa-solid fa-house pr-6"></i>Home</li> <br>
+                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
+                                class="fa-solid fa-magnifying-glass pr-6"></i>Explore</li><br>
+                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
+                                class="fa-regular fa-bell pr-6"></i>Notifications</li><br>
+                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
+                                class="fa-regular fa-envelope pr-6"></i>Messages</li><br>
+                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
+                                class="fa-solid fa-terminal pr-6"></i>Grok</li><br>
+                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
+                                class="fa-solid fa-user-group pr-6"></i>Communities</li><br>
+                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
+                                class="fa-brands fa-x-twitter pr-6"></i>Premium</li><br>
+                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
+                                class="fa-solid fa-bolt-lightning pr-6"></i>Verified Orgs</li><br>
+                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
+                                class="fa-regular fa-user pr-6"></i>Profile</li><br>
+                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
+                                class="fa-solid fa-ellipsis pr-6"></i>More</li><br>
+                    </ul>
+                    <button class="h-12 mt-2 bg-blue-500 rounded-3xl w-60">Post</button>
+                </div>
+
+                <div class="usercard flex items-center rounded-full p-3 hover:bg-gray-800 cursor-pointer">
+                    <img src="./images/userlogo.jpg" alt="User logo" class="w-10 h-10 object-cover rounded-full">
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between">
+                            <div class="flex flex-col items-center space-x-2">
+                                <p class="text-base font-bold ml-2">Adarsh Antony</p>
+                                <p class="text-sm text-gray-500">@AdarshAntony_</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doticon ml-auto">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="middle-sec border-x border-gray-600 w-[650px] h-[100vh] overflow-y-scroll no-scrollbar">
+            <div class="homepage-head flex justify-center h-12 relative">
+                <div class="underline-div h-1 rounded w-14 absolute bottom-0 left-[135px] bg-blue-600"></div>
+                <div class="foru w-[100%] h-[100%] flex items-center justify-center hover:bg-gray-950 cursor-pointer ">
+                    <span>For you</span>
+                </div>
+                <div
+                    class="following w-[100%] h-[100%] flex items-center justify-center hover:bg-gray-950 cursor-pointer">
+                    <span>Following</span>
+                </div>
+            </div>
+            <div class="border-y border-y-gray-600 h-auto p-4 flex flex-col justify-between">
+                <div class="addpost-head flex items-center">
+                    <img src="./images/userlogo.jpg" alt="usrlogo" class="rounded-full h-10 w-10">
+                    <span class="pl-2 text-xl text-gray-500">What's happening?!</span>
+                </div>
+                <div class="iconsec mt-4 flex justify-between items-center">
+                    <div class="icons pl-12">
+                        <i
+                            class="fa-regular fa-image mr-4 text-blue-500 h-6 text-center m-auto w-6 rounded-full pt-1 hover:bg-blue-200 cursor-pointer transition-all"></i>
+                        <i
+                            class="fa-solid fa-gift mr-4 text-blue-500 h-6 text-center m-auto w-6 rounded-full pt-1 hover:bg-blue-200 cursor-pointer transition-all"></i>
+                        <i
+                            class="fa-solid fa-list mr-4 text-blue-500 h-6 text-center m-auto w-6 rounded-full pt-1 hover:bg-blue-200 cursor-pointer transition-all"></i>
+                        <i
+                            class="fa-regular fa-face-smile mr-4 text-blue-500 h-6 text-center m-auto w-6 rounded-full pt-1 hover:bg-blue-200 cursor-pointer transition-all"></i>
+                        <i
+                            class="fa-solid fa-calendar mr-4 text-blue-500 h-6 text-center m-auto w-6 rounded-full pt-1 hover:bg-blue-200 cursor-pointer transition-all"></i>
+                        <i
+                            class="fa-solid fa-location-dot mr-4 text-blue-500 h-6 text-center m-auto w-6 rounded-full pt-1 hover:bg-blue-200 cursor-pointer transition-all"></i>
+                    </div>
+                    <button class="bg-blue-600 w-20 rounded-3xl h-10">Post</button>
+                </div>
+            </div>
+
+            <!--PostSec-->
+            <div class="post-sec border-x border-gray-600">
+
+                <!--PostSec1-->
+                <div class="xpost border-y border-y-gray-600 flex p-4 space-x-4 hover:cursor-pointer">
+                    <img class="w-10 h-10 rounded-full object-cover"
+                        src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile Picture">
+
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <span class="font-semibold">John Doe</span>
+                                <span class="text-gray-500">@johndoe</span>
+                                <span class="text-gray-500 text-sm">2h</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis text-gray-500 hover:cursor-pointer"></i>
+                        </div>
+                        <div class="postcont-div flex flex-col">
+                            <span class="text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat iste
+                                itaque, quia aspernatur quae eius? Cum aliquid aut temporibus harum quos in eos
+                                perspiciatis dolor voluptatum, quis quas, sint quidem!</span>
+                            <img src="https://picsum.photos/200" class="rounded-3xl mt-2 bg-cover">
+                        </div>
+                        <div class="reaction-area mt-2 flex justify-between text-gray-600">
+                            <div class="mainicon space-x-20">
+                                <i class="fa-regular fa-comment"></i>200
+                                <i class="fa-solid fa-arrows-spin"></i>145
+                                <i class="fa-regular fa-heart"></i>65.6k
+                                <i class="fa-solid fa-chart-simple"></i>536k
+                            </div>
+                            <div class="specialicon space-x-3">
+                                <i class="fa-regular fa-bookmark"></i>
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PostSec2-->
+                <div class="xpost border-y border-y-gray-600 flex p-4 space-x-4 hover:cursor-pointer">
+                    <img class="w-10 h-10 rounded-full object-cover"
+                        src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile Picture">
+
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <span class="font-semibold">John Doe</span>
+                                <span class="text-gray-500">@johndoe</span>
+                                <span class="text-gray-500 text-sm">2h</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis text-gray-500 hover:cursor-pointer"></i>
+                        </div>
+                        <div class="postcont-div flex flex-col">
+                            <span class="text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat iste
+                                itaque, quia aspernatur quae eius? Cum aliquid aut temporibus harum quos in eos
+                                perspiciatis dolor voluptatum, quis quas, sint quidem!</span>
+                        </div>
+                        <div class="reaction-area mt-2 flex justify-between text-gray-600">
+                            <div class="mainicon space-x-20">
+                                <i class="fa-regular fa-comment"></i>200
+                                <i class="fa-solid fa-arrows-spin"></i>145
+                                <i class="fa-regular fa-heart"></i>65.6k
+                                <i class="fa-solid fa-chart-simple"></i>536k
+                            </div>
+                            <div class="specialicon space-x-3">
+                                <i class="fa-regular fa-bookmark"></i>
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--PostSec3-->
+                <div class="xpost border-y border-y-gray-600 flex p-4 space-x-4 hover:cursor-pointer">
+                    <img class="w-10 h-10 rounded-full object-cover"
+                        src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile Picture">
+
+                    <div class="flex-1">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <span class="font-semibold">John Doe</span>
+                                <span class="text-gray-500">@johndoe</span>
+                                <span class="text-gray-500 text-sm">2h</span>
+                            </div>
+                            <i class="fa-solid fa-ellipsis text-gray-500 hover:cursor-pointer"></i>
+                        </div>
+                        <div class="postcont-div flex flex-col">
+                            <span class="text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat iste
+                                itaque, quia aspernatur quae eius? Cum aliquid aut temporibus harum quos in eos
+                                perspiciatis dolor voluptatum, quis quas, sint quidem!</span>
+                            <img src="https://picsum.photos/200" class="rounded-3xl mt-2 bg-cover">
+                        </div>
+                        <div class="reaction-area mt-2 flex justify-between text-gray-600">
+                            <div class="mainicon space-x-20">
+                                <i class="fa-regular fa-comment"></i>200
+                                <i class="fa-solid fa-arrows-spin"></i>145
+                                <i class="fa-regular fa-heart"></i>65.6k
+                                <i class="fa-solid fa-chart-simple"></i>536k
+                            </div>
+                            <div class="specialicon space-x-3">
+                                <i class="fa-regular fa-bookmark"></i>
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right-side w-96">
+            <div class="searchinput bg-gray-800 p-3 m-3 rounded-full flex items-center space-x-4 cursor-text">
+                <i class="fa-solid fa-magnifying-glass pl-1"></i>
+                <span>Search</span>
+            </div>
+            <div class="premium-ad border border-gray-600 rounded-3xl m-4 p-3">
+                <h2 class="font-bold text-xl">Subscribe to Premium</h2>
+                <p class="py-3 text-sm">Subscribe to unlock new features and if eligible, receive a share of ads
+                    revenue.</p>
+                <button class="h-10 w-24 rounded-3xl text-center bg-blue-600">Subscribe</button>
+            </div>
+            <div class="trending border border-gray-600 rounded-3xl m-4">
+                <h2 class="font-bold text-xl mb-4 p-3">What’s happening</h2>
+                <!-- Trending Item 1 -->
+                <div class="trending-cnt flex justify-between px-3 hover:cursor-pointer mb-4 hover:bg-gray-800">
+                    <div class="text-cnt">
+                        <p class="text-gray-500 text-sm">Trending in Entertainment</p>
+                        <p class="font-bold">#LoremIpsum</p>
+                        <p class="text-gray-500 text-sm">523k posts</p>
+                    </div>
+                    <div class="icon text-gray-500 cursor-pointer">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <!-- Trending Item 2 -->
+                <div class="trending-cnt flex justify-between px-3 hover:cursor-pointer mb-4 hover:bg-gray-800">
+                    <div class="text-cnt">
+                        <p class="text-gray-500 text-sm">Trending in Entertainment</p>
+                        <p class="font-bold">#LoremIpsum</p>
+                        <p class="text-gray-500 text-sm">523k posts</p>
+                    </div>
+                    <div class="icon text-gray-500 cursor-pointer">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <!-- Trending Item 3 -->
+                <div class="trending-cnt flex justify-between px-3 hover:cursor-pointer mb-4 hover:bg-gray-800">
+                    <div class="text-cnt">
+                        <p class="text-gray-500 text-sm">Trending in Entertainment</p>
+                        <p class="font-bold">#LoremIpsum</p>
+                        <p class="text-gray-500 text-sm">523k posts</p>
+                    </div>
+                    <div class="icon text-gray-500 cursor-pointer">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+                <!-- Trending Item 3 -->
+                <div class="trending-cnt flex justify-between px-3 hover:cursor-pointer mb-4 hover:bg-gray-800">
+                    <div class="text-cnt">
+                        <p class="text-gray-500 text-sm">Trending in Entertainment</p>
+                        <p class="font-bold">#LoremIpsum</p>
+                        <p class="text-gray-500 text-sm">523k posts</p>
+                    </div>
+                    <div class="icon text-gray-500 cursor-pointer">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>
