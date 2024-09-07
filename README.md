@@ -1,7 +1,5 @@
 # X.com Clone
 
-This is a clone for the site [X.com](x.com). made using Tailwind css combined with html and Javascript.
-
-work in progress
+This is a UI clone for the site X.com made using Tailwind css.
 
 Author : Adarsh Antony
