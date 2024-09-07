@@ -1337,10 +1337,6 @@ video {
     left: 0;
   }
 
-  .max-md\:left-\[\] {
-    left: ;
-  }
-
   .max-md\:left-\[-120px\] {
     left: -120px;
   }
