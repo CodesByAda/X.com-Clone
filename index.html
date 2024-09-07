@@ -16,10 +16,10 @@
 
 <body class="bg-black text-white overflow-hidden flex justify-center">
     <div class="container flex justify-center">
-        <div class="left-side w-72 font-Inter text-[20px] h-[100vh] overflow-hidden">
-            <div class="navigation p-4 flex flex-col justify-between h-[100%]">
-                <div class="navsec1">
-                    <div class="logo mb-2 pl-2">
+        <div class="left-side w-72 font-Inter text-[20px] h-[100vh] overflow-hidden max-xl:min-w-16 max-xl:max-w-16">
+            <div class="navigation p-4 flex flex-col justify-between h-[100%] max-xl:p-0 max-xl:items-center max-xl:justify-between">
+                <div class="navsec1 max-xl:flex flex-col items-center">
+                    <div class="logo mb-2 pl-3 max-xl:p-0 max-xl:pt-3">
                         <svg viewBox="0 0 24 24" aria-hidden="true"
                             class="h-[30px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"
                             fill="currentColor">
@@ -31,33 +31,53 @@
                         </svg>
                     </div>
                     <ul class="list-none inline-block">
-                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
-                                class="fa-solid fa-house pr-6"></i>Home</li> <br>
-                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
-                                class="fa-solid fa-magnifying-glass pr-6"></i>Explore</li><br>
-                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
-                                class="fa-regular fa-bell pr-6"></i>Notifications</li><br>
-                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
-                                class="fa-regular fa-envelope pr-6"></i>Messages</li><br>
-                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
-                                class="fa-solid fa-terminal pr-6"></i>Grok</li><br>
-                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
-                                class="fa-solid fa-user-group pr-6"></i>Communities</li><br>
-                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
-                                class="fa-brands fa-x-twitter pr-6"></i>Premium</li><br>
-                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
-                                class="fa-solid fa-bolt-lightning pr-6"></i>Verified Orgs</li><br>
-                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
-                                class="fa-regular fa-user pr-6"></i>Profile</li><br>
-                        <li class="py-2.5 inline-block hover:bg-gray-900 px-4 cursor-pointer rounded-3xl"><i
-                                class="fa-solid fa-ellipsis pr-6"></i>More</li><br>
+                        <li class="py-2 px-4 hover:bg-gray-900 cursor-pointer rounded-3xl">
+                            <i class="fa-solid fa-house pr-6 max-xl:pr-0"></i>
+                            <span class="max-xl:hidden">Home</span>
+                        </li>
+                        <li class="py-2 px-4 hover:bg-gray-900 cursor-pointer rounded-3xl">
+                            <i class="fa-solid fa-magnifying-glass pr-6 max-xl:pr-0"></i>
+                            <span class="max-xl:hidden">Explore</span>
+                        </li>
+                        <li class="py-2 px-4 hover:bg-gray-900 cursor-pointer rounded-3xl">
+                            <i class="fa-regular fa-bell pr-6 max-xl:pr-0 items-centerr"></i>
+                            <span class="max-xl:hidden">Notifications</span>
+                        </li>
+                        <li class="py-2 px-4 hover:bg-gray-900 cursor-pointer rounded-3xl">
+                            <i class="fa-regular fa-envelope pr-6 max-xl:pr-0"></i>
+                            <span class="max-xl:hidden">Messages</span>
+                        </li>
+                        <li class="py-2 px-4 hover:bg-gray-900 cursor-pointer rounded-3xl">
+                            <i class="fa-solid fa-terminal pr-6 max-xl:pr-0"></i>
+                            <span class="max-xl:hidden">Grok</span>
+                        </li>
+                        <li class="py-2 px-4 hover:bg-gray-900 cursor-pointer rounded-3xl">
+                            <i class="fa-solid fa-user-group pr-6 max-xl:pr-0"></i>
+                            <span class="max-xl:hidden">Communities</span>
+                        </li>
+                        <li class="py-2 px-4 hover:bg-gray-900 cursor-pointer rounded-3xl">
+                            <i class="fa-brands fa-x-twitter pr-6 max-xl:pr-0"></i>
+                            <span class="max-xl:hidden">Premium</span>
+                        </li>
+                        <li class="py-2 px-4 hover:bg-gray-900 cursor-pointer rounded-3xl">
+                            <i class="fa-solid fa-bolt-lightning pr-6 max-xl:pr-0"></i>
+                            <span class="max-xl:hidden">Verified Orgs</span>
+                        </li>
+                        <li class="py-2 px-4 hover:bg-gray-900 cursor-pointer rounded-3xl">
+                            <i class="fa-regular fa-user pr-6 max-xl:pr-0"></i>
+                            <span class="max-xl:hidden">Profile</span>
+                        </li>
+                        <li class="py-2 px-4 hover:bg-gray-900 cursor-pointer rounded-3xl">
+                            <i class="fa-solid fa-ellipsis pr-6 max-xl:pr-0"></i>
+                            <span class="max-xl:hidden">More</span>
+                        </li>
                     </ul>
-                    <button class="h-12 mt-2 bg-blue-500 rounded-3xl w-60">Post</button>
+                    <button class="h-12 mt-2 bg-blue-500 rounded-3xl w-60 max-xl:w-12">Post</button>
                 </div>
 
                 <div class="usercard flex items-center rounded-full p-3 hover:bg-gray-800 cursor-pointer">
                     <img src="./images/userlogo.jpg" alt="User logo" class="w-10 h-10 object-cover rounded-full">
-                    <div class="flex-1">
+                    <div class="flex-1 max-xl:hidden">
                         <div class="flex items-center justify-between">
                             <div class="flex flex-col items-center space-x-2">
                                 <p class="text-base font-bold ml-2">Adarsh Antony</p>
@@ -65,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="doticon ml-auto">
+                    <div class="doticon ml-auto max-xl:hidden">
                         <i class="fa-solid fa-ellipsis"></i>
                     </div>
                 </div>
@@ -74,7 +94,7 @@
         </div>
         <div class="middle-sec border-x border-gray-600 w-[650px] h-[100vh] overflow-y-scroll no-scrollbar">
             <div class="homepage-head flex justify-center h-12 relative">
-                <div class="underline-div h-1 rounded w-14 absolute bottom-0 left-[135px] bg-blue-600"></div>
+                <div class="underline-div h-1 rounded w-14 absolute bottom-0 left-[135px] bg-blue-600 max-md:left-[20%] max-[528px]:left-[18%] max-[417px]:left-[15%] max-[300px]:left[12%]"></div>
                 <div class="foru w-[100%] h-[100%] flex items-center justify-center hover:bg-gray-950 cursor-pointer ">
                     <span>For you</span>
                 </div>
@@ -118,9 +138,13 @@
                     <div class="flex-1">
                         <div class="flex items-center justify-between">
                             <div class="flex items-center space-x-2">
-                                <span class="font-semibold">John Doe</span>
-                                <span class="text-gray-500">@johndoe</span>
-                                <span class="text-gray-500 text-sm">2h</span>
+                                <div class="name">
+                                    <span class="font-semibold">John Doe</span>
+                                    <span class="text-gray-500">@johndoe</span>
+                                </div>
+                                <div class="time">
+                                    <span class="text-gray-500 text-sm max-[348px]: pr-3">2h</span>
+                                </div>
                             </div>
                             <i class="fa-solid fa-ellipsis text-gray-500 hover:cursor-pointer"></i>
                         </div>
@@ -130,14 +154,26 @@
                                 perspiciatis dolor voluptatum, quis quas, sint quidem!</span>
                             <img src="https://picsum.photos/200" class="rounded-3xl mt-2 bg-cover">
                         </div>
-                        <div class="reaction-area mt-2 flex justify-between text-gray-600">
-                            <div class="mainicon space-x-20">
-                                <i class="fa-regular fa-comment"></i>200
-                                <i class="fa-solid fa-arrows-spin"></i>145
-                                <i class="fa-regular fa-heart"></i>65.6k
-                                <i class="fa-solid fa-chart-simple"></i>536k
+                        <div class="reaction-area mt-2 flex justify-between text-gray-600 max-[415px]:grid">
+                            <div class="mainicondiv flex space-x-16 max-sm:space-x-3">
+                                <div class="icon max-sm:text-sm">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <span>200</span>
+                                </div>
+                                <div class="icon max-sm:text-sm">
+                                    <i class="fa-solid fa-arrows-spin"></i>
+                                    <span>145</span>
+                                </div>
+                                <div class="icon max-sm:text-sm">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span>65.6k</span>
+                                </div>
+                                <div class="icon max-sm:text-sm">
+                                    <i class="fa-solid fa-chart-simple"></i>
+                                    <span>536k</span>
+                                </div>
                             </div>
-                            <div class="specialicon space-x-3">
+                            <div class="specialicon space-x-3 max-[415px]:mt-2">
                                 <i class="fa-regular fa-bookmark"></i>
                                 <i class="fa-solid fa-download"></i>
                             </div>
@@ -164,14 +200,26 @@
                                 itaque, quia aspernatur quae eius? Cum aliquid aut temporibus harum quos in eos
                                 perspiciatis dolor voluptatum, quis quas, sint quidem!</span>
                         </div>
-                        <div class="reaction-area mt-2 flex justify-between text-gray-600">
-                            <div class="mainicon space-x-20">
-                                <i class="fa-regular fa-comment"></i>200
-                                <i class="fa-solid fa-arrows-spin"></i>145
-                                <i class="fa-regular fa-heart"></i>65.6k
-                                <i class="fa-solid fa-chart-simple"></i>536k
+                        <div class="reaction-area mt-2 flex justify-between text-gray-600 max-[415px]:grid">
+                            <div class="mainicondiv flex space-x-16 max-sm:space-x-3">
+                                <div class="icon max-sm:text-sm">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <span>200</span>
+                                </div>
+                                <div class="icon max-sm:text-sm">
+                                    <i class="fa-solid fa-arrows-spin"></i>
+                                    <span>145</span>
+                                </div>
+                                <div class="icon max-sm:text-sm">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span>65.6k</span>
+                                </div>
+                                <div class="icon max-sm:text-sm">
+                                    <i class="fa-solid fa-chart-simple"></i>
+                                    <span>536k</span>
+                                </div>
                             </div>
-                            <div class="specialicon space-x-3">
+                            <div class="specialicon space-x-3 max-[415px]:mt-2">
                                 <i class="fa-regular fa-bookmark"></i>
                                 <i class="fa-solid fa-download"></i>
                             </div>
@@ -199,14 +247,26 @@
                                 perspiciatis dolor voluptatum, quis quas, sint quidem!</span>
                             <img src="https://picsum.photos/200" class="rounded-3xl mt-2 bg-cover">
                         </div>
-                        <div class="reaction-area mt-2 flex justify-between text-gray-600">
-                            <div class="mainicon space-x-20">
-                                <i class="fa-regular fa-comment"></i>200
-                                <i class="fa-solid fa-arrows-spin"></i>145
-                                <i class="fa-regular fa-heart"></i>65.6k
-                                <i class="fa-solid fa-chart-simple"></i>536k
+                        <div class="reaction-area mt-2 flex justify-between text-gray-600 max-[415px]:grid">
+                            <div class="mainicondiv flex space-x-16 max-sm:space-x-3">
+                                <div class="icon max-sm:text-sm">
+                                    <i class="fa-regular fa-comment"></i>
+                                    <span>200</span>
+                                </div>
+                                <div class="icon max-sm:text-sm">
+                                    <i class="fa-solid fa-arrows-spin"></i>
+                                    <span>145</span>
+                                </div>
+                                <div class="icon max-sm:text-sm">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span>65.6k</span>
+                                </div>
+                                <div class="icon max-sm:text-sm">
+                                    <i class="fa-solid fa-chart-simple"></i>
+                                    <span>536k</span>
+                                </div>
                             </div>
-                            <div class="specialicon space-x-3">
+                            <div class="specialicon space-x-3 max-[415px]:mt-2">
                                 <i class="fa-regular fa-bookmark"></i>
                                 <i class="fa-solid fa-download"></i>
                             </div>
@@ -216,7 +276,7 @@
 
             </div>
         </div>
-        <div class="right-side w-96">
+        <div class="right-side w-96 max-lg:hidden">
             <div class="searchinput bg-gray-800 p-3 m-3 rounded-full flex items-center space-x-4 cursor-text">
                 <i class="fa-solid fa-magnifying-glass pl-1"></i>
                 <span>Search</span>
@@ -262,21 +322,9 @@
                         <i class="fa-solid fa-ellipsis"></i>
                     </div>
                 </div>
-                <!-- Trending Item 3 -->
-                <div class="trending-cnt flex justify-between px-3 hover:cursor-pointer mb-4 hover:bg-gray-800">
-                    <div class="text-cnt">
-                        <p class="text-gray-500 text-sm">Trending in Entertainment</p>
-                        <p class="font-bold">#LoremIpsum</p>
-                        <p class="text-gray-500 text-sm">523k posts</p>
-                    </div>
-                    <div class="icon text-gray-500 cursor-pointer">
-                        <i class="fa-solid fa-ellipsis"></i>
-                    </div>
-                </div>
             </div>
         </div>
 
     </div>
 </body>
-
 </html>
